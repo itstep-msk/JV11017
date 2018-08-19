@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+</head>
+<body>
+
+<style>
+	.container {
+		width: 400px;
+    	overflow: hidden;
+    	margin: 0 auto;
+	}
+	.box {
+		width: 10000px;
+		transition: all, .25s;
+	}
+</style>
+
+<div class="container">
+	<div class="box">
+		<img src="img/1.jpg"><img src="img/2.jpg"><img src="img/3.jpg">
+	</div>
+	<div class="prev">prev</div>
+	<div class="next">next</div>
+</div>
+
+<script>
+	var box = document.querySelector(".box");
+	var prev = document.querySelector(".prev");
+	var next = document.querySelector(".next");
+	var count = 0;
+
+	next.addEventListener("click", function() {
+		if(count >= 2) return
+		count++;
+		box.style.marginLeft = count*-400 + "px";
+	})
+
+	prev.addEventListener("click", function() {
+		if(count <= 0) return
+		count--;
+		box.style.marginLeft = count*-400 + "px";
+	})
+</script>
+
+</body>
+</html>

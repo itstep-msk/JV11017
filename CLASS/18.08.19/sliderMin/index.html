@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider</title>
+</head>
+<body>
+
+<style>
+	#c {
+		width: 400px;
+    	overflow: hidden;
+    	margin: 0 auto;
+	}
+	#b {
+		width: 10000px;
+		transition: all, .25s;
+		position: relative;
+		left: 0;
+	}
+</style>
+
+<div id="c">
+	<div id="b">
+		<img src="img/1.jpg"><img src="img/2.jpg"><img src="img/3.jpg">
+	</div>
+	<div id="p">prev</div>
+	<div id="n">next</div>
+</div>
+
+<script>
+	c=0;
+	n.onclick=()=>{c>=2?0:c++;b.style.left=c*-400+"px"}
+	p.onclick=()=>{c<=0?0:c--;b.style.left=c*-400+"px"}
+</script>
+
+</body>
+</html>

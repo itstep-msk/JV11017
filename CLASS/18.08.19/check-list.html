@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check-list</title>
+</head>
+<body>
+
+<input class="text">
+<input class="button" type="submit" value="Добавить">
+<div class="result"></div>
+
+<script>
+	var text = document.querySelector(".text");
+	var button = document.querySelector(".button");
+	var result = document.querySelector(".result");
+
+	button.addEventListener("click", function() {
+		if(text.value == "") return
+			
+		result.innerHTML += text.value + "<br>";
+		text.value = "";
+	})
+
+</script>
+
+</body>
+</html>

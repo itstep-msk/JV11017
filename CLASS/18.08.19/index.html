@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!--
+<script async src="js/lib.js"></script>
+<script async src="js/script.js"></script>
+<script async src="js/3.js"></script>
+
+<script defer src="js/lib.js"></script>
+<script defer src="js/script.js"></script>
+<script defer src="js/3.js"></script>
+-->
+
+<script>
+	/*alert("Привет мир")
+	alert("Ещше раз привет")*/
+
+	/*alert(3 +
+		1
+		+ 2)*/
+	//alert("Будет ошибка");
+	//[1,2].forEach(alert);
+	/*
+	var message;
+
+	message = "Hello";
+
+	//alert(message);
+
+	var $ = 1;
+	var _ = 2;
+	//alert($ + _);
+
+	/* Шесть типов данных */
+/*
+	var n0 = 123; // number
+	var n1 = 123.456; // number
+	var str = "Hello world"; // string
+	var bool = true // boolean
+	var varNull = null; // null
+	var undef = undefined; // undefined
+	var obj = { name: "Василий" } // Объект
+
+	obj.age = 25;
+
+	console.log(typeof n0); // number
+	console.log(typeof n1); // number
+	console.log(typeof str); // string
+	console.log(typeof bool); // boolean
+	console.log(typeof varNull); // object
+	console.log(typeof undef); // undefind
+	console.log(typeof obj); // object
+
+	console.log(2 / "Привет");
+	console.log(1 / 0);
+	console.log(-1 / 0);
+
+	console.log("2" + 1);
+
+	/* Взаимодействие с пользователем */
+	/*
+	alert("Привет мир");
+	var confirmAnswer = confirm("Вам не есть 18 ?");
+	console.log(confirmAnswer);
+
+	var promprAnswer = prompt("Сколько вам лет ?");
+	console.log(promprAnswer);
+	*/
+	/* Преобразование типов */
+	var n = "5";
+	console.log(Number(n)); // 5
+	console.log(parseInt(n)) // 5
+	console.log(+n); // 5
+
+	var cssValue = "100px";
+	console.log(Number(cssValue)) // NaN
+	console.log(parseInt(cssValue)) // 100
+	console.log(+true);
+	console.log(+false);
+
+	/* function */
+
+	function hello(name = "Александр") {
+		if(name == undefined) {
+			return "Введите имя";
+		}
+		return "Привет " + name;
+	}
+
+	console.log(hello("Роман"));
+	console.log(hello("Дмитрий"));
+	console.log(hello());
+
+	function f(n){return !n?1:n=n*f(n-1)}
+
+	console.log(f(5))
+
+	function fb(n) {
+		if (n < 2) {
+			return n
+		}
+		return fb(n-1) + fb(n-2);
+	}
+
+	console.log(fb(10))
+
+	var obj = {
+		apple: 1,
+		orange: 2,
+		age: 20,
+		name: "Вася",
+		vegetables: ["Carrot","Tomato"],
+		ftuits: {
+			melon: 1,
+			watermelon: 2
+		},
+		hello: function() {
+			return "Hello"
+		}
+	}
+
+	console.log(obj.apple) // 1
+	console.log(obj.name) // "Вася"
+	console.log(obj.vegetables[1]) // "Tomato"
+	console.log(obj.ftuits.melon) // 1
+	console.log(obj.hello())
+	
+</script>
+
+
+</body>
+</html>
