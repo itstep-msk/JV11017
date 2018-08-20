@@ -1,0 +1,29 @@
+1) Создать страницу и разметить текст как указано на "Письмо.xps"
+2) Создать две таблицы из файлов во вложении.
+3) Найти все элементы с классом apple и orange, которые внутри fruit.
+Найти все элементы carrot и tomato, которые внутри vegetables
+
+<div class="fruit">
+	<div class="apple">Яблоко</div>
+	<div class="orange">Апельсин</div>
+</div>
+
+<div class="vegetables">
+	<div class="carrot">Морковь</div>
+	<div class="tomato">Помидор</div>
+</div>
+
+<div class="cart">
+	<div class="tomato">Помидор</div>
+	<div class="apple">Яблоко</div>
+</div>
+
+4) Найти элемент с tomato, который раходится в элементе с дмувя классами vegetables и fruit
+
+<div class="fruit vegetables">
+	<div class="tomato">Помидор</div>
+</div>
+
+5) На основе селектора построить верстку
+
+header nav .box .section.section-left .link
