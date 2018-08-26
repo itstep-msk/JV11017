@@ -1,0 +1,32 @@
+@font-face {
+	src: url("../fonts/OpenSans-Regular.ttf");
+	font-family: myOpenSans;
+}
+
+body {
+	font-family: myOpenSans;
+	margin: 0 auto;
+}
+
+.tabs {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.tabs-captions {
+    border-bottom: 1px solid;
+}
+
+.tabs-link {
+    background: #dcdcdc;
+    padding: 10px;
+    display: inline-block;
+}
+
+.tabs-content {
+    display: none;
+}
+
+.tabs-link.active {
+    background: yellow;
+}
