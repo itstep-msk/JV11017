@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue 05</title>
+</head>
+<body>
+
+<div id="app">
+	<div>{{ message }}</div>
+	<button v-on:click="reverseMessage">Перевернуть</button>
+	<input v-model="message">
+</div>
+
+<script src="vue.min.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Hello world"
+		},
+		methods: {
+			reverseMessage: function() {
+				this.message = this.message.split("").reverse().join("");
+			}
+		}
+	})
+</script>
+</body>
+</html>

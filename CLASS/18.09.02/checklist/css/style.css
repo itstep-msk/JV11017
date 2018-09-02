@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+
+.text {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.button {
+    margin-left: -4px;
+    padding: 10px;
+    width: 20%;
+}
+
+.row {
+	padding: 10px;
+	background: yellow;
+}
+
+.remove {
+    background: grey;
+    color: white;
+    float: right;
+}

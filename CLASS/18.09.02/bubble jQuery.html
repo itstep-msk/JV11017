@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bubble jQuery</title>
+</head>
+<body>
+
+<style>
+	.bubble {
+		width: 50px;
+		height: 50px;
+		background: green;
+		border-radius: 50%;
+		display: inline-block;
+	}
+</style>
+
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+<div class="bubble"></div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+	// document.querySelector(".class")
+	// $(".class")
+
+	// addEventListener => on
+
+	var bubble = $(".bubble");
+
+	bubble.on("click", function() {
+		//$(this).hide(1000).show(1000);
+		//$(this).css({"background":"red"});
+		$(this).animate({"width":"100px", "height":"100px"});
+	})
+
+</script>
+
+</body>
+</html>

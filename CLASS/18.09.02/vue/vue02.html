@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue 02</title>
+</head>
+<body>
+
+<style>
+	.apple {
+		background: green;
+	}
+</style>
+
+<div id="app">
+	<span v-bind:title="message" v-bind:class="className">Наведи курсором</span>
+</div>
+
+<script src="vue.min.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			message: "Яблоки",
+			className: "apple"
+		}
+	})
+</script>
+</body>
+</html>

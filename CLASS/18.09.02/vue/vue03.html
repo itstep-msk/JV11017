@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue 03</title>
+</head>
+<body>
+
+<div id="app">
+	<div v-if="orange">Привет мир</div>
+</div>
+
+<script src="vue.min.js"></script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data: {
+			orange: true
+		}
+	})
+</script>
+</body>
+</html>
