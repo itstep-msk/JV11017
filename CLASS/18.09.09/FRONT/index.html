@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Client</title>
+</head>
+<body>
+
+<input class="nick" placeholder="nick">
+<input class="message" placeholder="message">
+<input class="button" type="submit" value="send">
+<div class="messages"></div>
+
+<script src="jquery-3.3.1.min.js"></script>
+<script src="socket.io.js"></script>
+<script>
+	var button = $(".button");
+	var message = $(".message");
+	var nick = $(".nick");
+	var messages = $(".messages");
+	var socket = io.connect("http://127.0.0.1:7777");
+
+	button.on("click", function() {
+		socket.emit("clientEvent", nick.val() + ": " + message.val());
+		message.val("");
+	})
+
+	socket.on("serverEvent", function(data) {
+		messages.append("<div>" + data + "</div>")
+	})
+</script>
+
+</body>
+</html>
